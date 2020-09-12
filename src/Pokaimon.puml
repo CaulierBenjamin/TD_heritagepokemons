@@ -1,0 +1,20 @@
+@startuml
+class Pokemon {
++ nom : string
++ niveau_energie : int
++ poids : double
+
++ Pokemon()
+}
+
+class Insecte {
++nombre_pattes : int
+-nombre_ailes = int
+-taille = double
+
++vitesseso() void
++vitesseair() void
+}
+
+class test
+@enduml
