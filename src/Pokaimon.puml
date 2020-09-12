@@ -1,20 +1,51 @@
 @startuml
 class Pokemon {
-+ nom : string
-+ niveau_energie : int
-+ poids : double
+# nom : string
+# niveau_energie : int
+# poids : double
 
-+ Pokemon()
++ pokemon()
++ pokemon(string pNom ,int pNiveau_Energie , double pPoids)
 }
 
 class Insecte {
-+nombre_pattes : int
+-nombre_pattes : int
 -nombre_ailes = int
 -taille = double
 
-+vitesseso() void
-+vitesseair() void
++ insecte(string pNom ,int pNiveau_Energie , double pPoids , int pNombre_pattes , int pNombre_ailes , double taille)
++ vitessesol() void
++ vitesseair() void
 }
 
-class test
+class Addict{
+-nombre_pattes : int
+-niveau_jeu : int
+-taille = double
+
++ addict(string pNom ,int pNiveau_Energie , double pPoids , int pNombre_pattes , int pNiveau_jeu , double taille)
++ vitessesol() void
+}
+
+class Feu{
+-nombre_ailes : int
+-nombre_boule_feu : double
+-temperature_feu : double
+-taille : double
+
++ feu(string pNom ,int pNiveau_Energie , double pPoids , int pNombre_ailes , double pNombre_boule_feu , double pTemperature_feu, double taille)
++ vitesseair() void
+}
+
+class Mer{
+-nombre_nageoir : int
+
++Mer(string pNom ,int pNiveau_Energie , double pPoids, int pNomre_nageoir)
++vitesseeau() void;
+}
+Pokemon <|-- Insecte
+Pokemon <|-- Mer
+Pokemon <|-- Feu
+Pokemon <|-- Addict
+
 @enduml
