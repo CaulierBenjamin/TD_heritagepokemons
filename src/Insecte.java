@@ -20,4 +20,8 @@ public class Insecte extends Pokemon{
         double vitesse = this.nombre_ailes * this.taille * 10;
         return vitesse;
     }
+    public double attaque_pokemon(){
+        double attaque = vitesseair()*3;
+        return  attaque;
+    }
 }

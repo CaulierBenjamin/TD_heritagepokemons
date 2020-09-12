@@ -19,4 +19,8 @@ public class Feu extends Pokemon{
         double vitesse = this.nombre_aile * this.taille * 10;
         return vitesse;
     }
+    public double attaque(){
+        double attaque = 15 * vitesseair();
+        return  attaque;
+    }
 }

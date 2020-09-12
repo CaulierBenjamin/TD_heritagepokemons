@@ -13,4 +13,8 @@ public class Mer extends Pokemon{
         double vitesse = (poids/25)*this.nombre_nageoire;
         return vitesse;
     }
+    public double attaque(){
+        double attaque = 10 * nombre_nageoire;
+        return attaque;
+    }
 }

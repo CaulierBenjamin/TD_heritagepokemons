@@ -19,4 +19,8 @@ public class Addict extends Pokemon{
         double vitesse = this.nombre_pattes * this.taille * 3;
         return vitesse;
     }
+    public double attaque(){
+        double attaque = 2 * vitessesol();
+        return  attaque;
+    }
 }
