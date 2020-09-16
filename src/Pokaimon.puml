@@ -1,7 +1,7 @@
 @startuml
 class Pokemon {
 # nom : string
-# niveau_energie : int
+# niveau_energie : double
 # poids : double
 
 + pokemon()
