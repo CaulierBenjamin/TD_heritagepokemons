@@ -23,4 +23,7 @@ public class Addict extends Pokemon{
         double attaque = 2 * vitessesol();
         return  attaque;
     }
+    public String toString(){
+        return super.toString() + "mon nombre de pattes est : "+this.nombre_pattes+ " mon niveau de jeu : "+this.niveau_jeu + " nombre dheure "+ this.nombre_heures+" ma taille est " +this.taille;
+    }
 }

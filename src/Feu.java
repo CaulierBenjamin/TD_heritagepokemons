@@ -23,4 +23,7 @@ public class Feu extends Pokemon{
         double attaque = 15 * vitesseair();
         return  attaque;
     }
+    public String toString(){
+        return super.toString() + "mon nombre d'ailes est : "+this.nombre_aile+ ", nombre de boule de feu : "+this.nombre_boule_feu + " ma taille est " +this.taille + " , temperature du feu "+this.temperature_feu;
+    }
 }

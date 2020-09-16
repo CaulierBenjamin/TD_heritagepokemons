@@ -10,8 +10,8 @@ class Pokemon {
 
 class Insecte {
 -nombre_pattes : int
--nombre_ailes = int
--taille = double
+-nombre_ailes : int
+-taille : double
 
 + insecte(string pNom ,int pNiveau_Energie , double pPoids , int pNombre_pattes , int pNombre_ailes , double taille)
 + vitessesol() void
@@ -21,7 +21,7 @@ class Insecte {
 class Addict{
 -nombre_pattes : int
 -niveau_jeu : int
--taille = double
+-taille : double
 
 + addict(string pNom ,int pNiveau_Energie , double pPoids , int pNombre_pattes , int pNiveau_jeu , double taille)
 + vitessesol() void

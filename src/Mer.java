@@ -17,4 +17,7 @@ public class Mer extends Pokemon{
         double attaque = 10 * nombre_nageoire;
         return attaque;
     }
+    public String toString(){
+        return super.toString() + "mon nombre de nageoire "+this.nombre_nageoire;
+    }
 }

@@ -24,4 +24,7 @@ public class Insecte extends Pokemon{
         double attaque = vitesseair()*3;
         return  attaque;
     }
+    public String toString(){
+        return super.toString() + "mon nombre de pattes est : "+this.nombre_pattes+ " mon nomvbre d'ailes : "+this.nombre_ailes + " ma taille est " +this.taille;
+    }
 }
